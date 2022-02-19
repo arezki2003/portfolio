@@ -1,109 +1,144 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="style.css">
-            <script src="https://kit.fontawesome.com/59227cfcef.js" crossorigin="anonymous"></script>
-            <title>Aceuil</title>
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
-                @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/59227cfcef.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+    </style>
+    <title>Document</title>
+</head>
+<body>
 
-            </style>
-        </head>
-        <body>
-            <div class="medias">
-                <ul class="mediasBtn">
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                </ul>
-             </div>
+    <!-- bouton de reseaux sociaux -->
 
+    <!-- <div class="medias">
+        <ul class="mediasBtn">
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div> -->
 
-             <div class="header">
-                <div class="logo"><a href="index.html">AREZKI</a></div>
-            
-                <div class="menu">
-                    <ul>
-                        <li class="pre"><a href="#presentation">presentation</a></li>
-                        <li class="pro"><a href="#projets">Projets</a></li>
-                        <li class="cont"><a href="#contact">Contact</a></li>
-                    </ul>
+    <!-- le header et le menu de navigation -->
+
+    <header>
+
+        <div class="logo"><a href="index.html">AREZKI</a></div>
+
+        <nav>
+            <ul>
+                <li><a href="#presentation">presentation</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- section de presenation -->
+
+    <section id="presentation">
+
+        <img src="myphoto.png" alt="ma photo">
+
+        <h2>Salut ! alors je me presente :</h2>
+
+        <p class="presentationTxt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Facilis praesentium minus perferendis illum libero voluptatem non reprehenderit veniam.
+            Optio accusantium omnis ratione rem non praesentium atque excepturi consectetur? Voluptatum harum,
+            facere, esse iure molestias reiciendis dolorem repudiandae nobis dicta blanditiis asperiores 
+            neque? Autem a sed, explicabo labore minus distinctio ipsa animi voluptatum dignissimos. 
+            Officiis fugit, placeat dolores dolorum nostrum provident pariatur dolorem assumenda esse nulla aperiam 
+            illum vitae recusandae et incidunt possimus maiores quae nihil laudantium officia doloribus ab magnam 
+            veritatis deserunt? Odit voluptatibus nesciunt praesentium architecto debitis. Voluptatem possimus 
+            doloremque aliquid doloribus iusto numquam, in porro animi dignissimos nulla.</p>
+    </section>
+
+    <!-- section des projets -->
+
+    <section id="projets">
+        <h2 class="projetTxt">Voici Les projets que j'ai realiser et ceux au quel j'ai contribuer :</h2>
+
+        <div class="projet_container">
+
+            <div class="projet_flip" id="one">
+                <div class="projet_flip_in">
+                    <div class="projet_flip_front "><p>hello1</p></div>
+                    <div class="projet_flip_back"><p>world1</p></div>
                 </div>
-
             </div>
-                     
-             <section id="presentation">
-                <img src="myphoto.png" alt="ma photo">
-                <p class="presentationTxt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis praesentium minus perferendis illum libero voluptatem non reprehenderit veniam.
-                    Optio accusantium omnis ratione rem non praesentium atque excepturi consectetur? Voluptatum harum,
-                    facere, esse iure molestias reiciendis dolorem repudiandae nobis dicta blanditiis asperiores 
-                    neque? Autem a sed, explicabo labore minus distinctio ipsa animi voluptatum dignissimos. 
-                    Officiis fugit, placeat dolores dolorum nostrum provident pariatur dolorem assumenda esse nulla aperiam 
-                    illum vitae recusandae et incidunt possimus maiores quae nihil laudantium officia doloribus ab magnam 
-                    veritatis deserunt? Odit voluptatibus nesciunt praesentium architecto debitis. Voluptatem possimus 
-                    doloremque aliquid doloribus iusto numquam, in porro animi dignissimos nulla.</p>
-            </section>
 
-            <section id="projets">
-                <h2 class="projetTxt">Voici Les projets que j'ai realiser et ceux au quel j'ai contribuer :</h2>
-
-                <div class="projet_container">
-
-                    <div class="projet_flip" id="one">
-                        <div class="projet_flip_in">
-                            <div class="projet_flip_front "><p>hello1</p></div>
-                            <div class="projet_flip_back"><p>world1</p></div>
-                        </div>
-                    </div>
-
-                    <div class="projet_flip" id="two">
-                        <div class="projet_flip_in">
-                            <div class="projet_flip_front"><p>hello2</p></div>
-                            <div class="projet_flip_back"><p>world2</p></div>
-                        </div>
-                    </div>
-                    <div class="projet_flip" id="three">
-                        <div class="projet_flip_in">
-                            <div class="projet_flip_front"><p>hello3</p></div>
-                            <div class="projet_flip_back"><p>world3</p></div>
-                        </div>
-                    </div>
-                    <div class="projet_flip" id="four">
-                        <div class="projet_flip_in">
-                            <div class="projet_flip_front"><p>hello4</p></div>
-                            <div class="projet_flip_back"><p>world4</p></div>
-                        </div>
-                    </div>
+            <div class="projet_flip" id="two">
+                <div class="projet_flip_in">
+                    <div class="projet_flip_front"><p>hello2</p></div>
+                    <div class="projet_flip_back"><p>world2</p></div>
                 </div>
+            </div>
+            <div class="projet_flip" id="three">
+                <div class="projet_flip_in">
+                    <div class="projet_flip_front"><p>hello3</p></div>
+                    <div class="projet_flip_back"><p>world3</p></div>
+                </div>
+            </div>
+            <div class="projet_flip" id="four">
+                <div class="projet_flip_in">
+                    <div class="projet_flip_front"><p>hello4</p></div>
+                    <div class="projet_flip_back"><p>world4</p></div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- la section pour me contacter -->
+
+    <section id="contact">
+
+        <h2 class="contact">Contact moi pour plus d'information :</h2>
+
+        <div class="contactList">
+            
+            <div class="contactinfo contactinfo1">
                 
+                <div class="telephone contacthover">
+                    <h3>telephone: 0754272927</h3>
+                </div>
 
-            </section>
+                <div class="mail contacthover">
+                    <h3>e-mail: aitarezki3@gmail.com</h3>
+                </div>
+            </div>
+            <div class="contactinfo contactinfo2">
 
-            <section id="contact">
+                <div class="linkedin contacthover">
+                    <a href="https://www.likedin.com/in/aitkettoutarezki"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.likedin.com/in/aitkettoutarezki" class="link">linkedin</a>
+                </div>
 
-                <h2 class="contact">Contact</h2>
+                <div class="twitter contacthover">
+                    <a href="https://www.twitter.com/ArezkiAit6"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.twitter.com/ArezkiAit6" class="link">twitter</a>
+                </div>
+                            
+            </div>
+            
+        </div>
 
-                <ul class="list1">
-                    <li class="numero">Telephone: 0754272927</li>
-                    <li class="adresse">Adresse mail: aitarezki3@gmail.com</li>
-                </ul>
-                <ul class="list2">
-                    <li class="linkedin">Linkedin:</li>
-                    <li class="twitter">twitter:</li>
-                </ul>
-
-            </section>
-
-            <footer>
-                <div class="copyright">copyright | reserved</div>
-            </footer>
+    </section>
 
 
-        </body>
-    </html>
+    <!-- le pied de page  -->
+
+    <footer>
+        <div class="copyright">copyright | reserved</div>
+    </footer>
+     
+</body>
+</html>

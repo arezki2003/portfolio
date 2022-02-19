@@ -1,281 +1,251 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 html{
-    scroll-behavior: smooth; 
-}
-body{
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.header{
-    position: sticky;
-    top: 0;
-    width: 100vw;
-    height: 100px;
-    background-color: #fff;
-    z-index: 2;
-}
-
-
-
-
-.medias{
+header{
     position: relative;
-    background-color: rgb(0, 0, 0);
-    height: 50px;
+    height: 100px;
     width: 100vw;
-    bottom: 0;
-
+    background-color: #fff;
 }
 
-.medias .mediasBtn{
+
+
+header .logo{
     position: absolute;
-    display: flex;
-    justify-content: space-between;
-    left: 50%;
-    transform: translateX(-50%);
-    list-style-type: none;
-    width: 200px;
-}
-
-.medias .mediasBtn li{
-    font-size: 20px;
-    margin-top: 10px;
-    transition: 1s ease;
-}
-.medias .mediasBtn li a{
-    color: #fff;
-    text-decoration: none;
-
-}
-
-.mediasBtn li:hover{
-    transform: translateY(-5px);
-}
-
-
-.logo{
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 25px;
+    margin-left: 40px;
     font-size: 40px;
     transition: 1s ease;
 }
 
-.logo a{
-    font-family: 'Festive', cursive;
-    text-decoration: none;
-    background: linear-gradient(120deg,rgb(0, 72, 226) 0%,rgb(83, 176, 252) 100%);
+header .logo:hover{
+    transform: translateY(-10px);
+}
+
+header .logo a{
+    background: linear-gradient(120deg,rgb(0, 174, 255) 0%,rgb(255, 0, 242) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.logo:hover{
-    transform: translateY(-5px);
-}
-
-.menu{
-    position: absolute;
-    right: 48px;
-}
-.menu ul{
-    position: relative;
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    text-align: center;
-    width: 500px;
-}
-
-.menu ul li{
-    position: relative;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s ease;
-}
-
-.menu ul li a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
-    font-size: 30px;
-    color: black;
-    transition: 1s ease;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 1000;
+}
+
+header nav{
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
     height: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu ul li:hover{
-    background-color: rgb(29, 100, 255);
+header nav ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
 }
 
-.menu ul li:hover a{
-    color: #fff;
+header nav li{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    transition: 1s ease;
+    font-size: 30px;
 }
 
+header nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 1s ease;
+}
+
+header li:hover{
+    background-color: rgb(0, 47, 255);
+}
+
+header li:hover a{
+    color: white;
+}
 
 #presentation{
-    background-color: rgb(129, 198, 255);
-    position: relative;
-    height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 #presentation img{
-    margin: 50px 0px 0px 50px;
-    height: 300px;
+    position: absolute;
     width: 300px;
+    height: 300px;
+    margin: 250px 20px 20px 150px;
 }
 
-#presentation .presentationTxt{
-    margin: 50px 50px 0 50px;
-    font-size: 20px;
+h2{
+    position: absolute;
+    margin-top: 80px;
+    width: 100vw;
+    text-align: center;
+    font-size: 40px;
+}
 
+#presentation p{
+    position: absolute;
+    width: 600px;
+    right: 100px;
+    margin-top: 250px;
+    font-size: 20px;
 }
 
 #projets{
     position: relative;
-    height: 700px;    
-    display: flex;
-    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 
-#projets .projetTxt{
+.projet_container{
     position: absolute;
-    margin-top: 150px;
-    font-size: 30px;
-    width: 900px;
-    height: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#projets .projet_container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
-    justify-content: space-around;
+    height: 100%;
     width: 100%;
-    height: 200px;
+    justify-content: space-around;
 }
-
-
 
 .projet_flip{
     position: relative;
     height: 300px;
     width: 300px;
+    margin-top: 230px;
     border: 1px solid #f1f1f1;
     perspective: 500px;
 }
-.projet_flip #one{
-    position: absolute;
-    left: 0;
-}
-
-.projet_flip.one{
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
 
 .projet_flip_in{
+        position: relative;
     height: 100%;
     width: 100%;
-    position: relative;
-    transition: 1s;
+    transition: 1s ease;
     transform-style: preserve-3d;
 }
 
+.projet_flip_front, .projet_flip_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
 .projet_flip_front{
-    background-color: #ffbb00;
-    color: black;
+    background-color: rgb(109, 29, 29);
 }
 
 .projet_flip_back{
-    background-color: brown;
-    color: wheat;
-    transform: rotateY(180deg);
-}
-
-.projet_flip_front, .projet_flip_back{
-    height: 100%;
     position: absolute;
-    width: 100%;
-    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    top: 0;
+    background-color: rgb(228, 78, 52);
 }
 
 .projet_flip:hover .projet_flip_in{
     transform: rotateY(180deg);
 }
 
-
-
-
 #contact{
+    display: flex;
     position: relative;
-    background-color: yellow;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
+}
+
+#contact .contactList{
+    margin-top: 220px;
+    height: 400px;
     width: 100%;
     display:flex;
 }
 
-#contact .contact{
+#contact .contactinfo{
     position: absolute;
+    display: flex;
+    justify-content: space-around;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 150px;
-    font-size: 40px;
+    width: 100%;
+    font-size: 25px;
 }
 
-#contact .list1{
-    position: absolute;
-    font-size: 20px;
+#contact .contactinfo i{
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+#contact .contactinfo1{
+    text-align: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+#contact .contactinfo2 {
+    display: flex;
     margin-top: 300px;
-    margin-left: 100px;
 }
 
-#contact .list1 .numero{
-    margin-bottom: 40px;
-}
-
-#contact .list2{
-    position: absolute;
-    font-size: 20px;
-    margin-top: 300px;
-    right: 400px;
-}
-#contact .list2 .linkedin{
-    margin-bottom: 40px;
-}
-
-footer{
-    position: relative;
-    height: 100px;
-    background-color: black;
+#contact .contactinfo2 .linkedin{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer .copyright{
+#contact .contactinfo2 .twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contactinfo2 .link{
+    text-decoration: none;
+    color: black;
+}
+
+#contact .contactList .contacthover{
+    padding: 20px;
+    transition: 1s ease;
+    border-radius: 20px;
+}
+
+#contact .contactList .contacthover:hover{
+    background-color: rgb(241, 82, 82);
+}
+
+footer{
+    position: relative;
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+}
+ footer .copyright {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 30px;
 }
